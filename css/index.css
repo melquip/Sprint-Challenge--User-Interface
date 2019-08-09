@@ -255,6 +255,12 @@ header nav a:hover {
     width: 100%;
     padding: 0 20px 20px 20px;
 }
+.topics img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
 
 .flex .col2 {
     width: 100%;
@@ -374,4 +380,66 @@ header nav a:hover {
 }
 .topics .topic.col3 img {
     max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        padding-left: 15px;
+    }
+    header nav {
+        padding-left: 50px;
+    }
+    header nav a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .topics .topic.col2, .topics .topic.col3 {
+        max-width: 48%;
+        flex: 1 1 48%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    header {
+        padding-left: 15px;
+    }
+    header nav {
+        padding-left: 50px;
+    }
+    header nav a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .top-content .text-container:last-child {
+        padding-bottom: 15px;
+    }
+    .topics .topic {
+        margin-bottom: 25px;
+    }
+    .flex .col2, .topics .topic.col2, .topics .topic.col3 {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .bottom-content {
+        margin: 0 15px 20px;
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .bottom-content .text-container:first-child {
+        margin-top: 0;
+    }
+
 }
