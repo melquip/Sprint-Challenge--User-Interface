@@ -331,3 +331,21 @@ header nav a:hover {
     min-height: 100px;
     padding: 3px 7px;
 }
+.contacts p + h2 {
+    margin-top: 20px;
+}
+.contacts ul {
+    margin-top: 15px;
+}
+.contacts ul li {
+    list-style: inside square;
+}
+.contacts li a {
+    color: lightblue;
+    text-decoration: none;
+    line-height: 30px;
+    transition: all .33s ease-in-out;
+}
+.contacts li a:hover {
+    color: cyan;
+}
