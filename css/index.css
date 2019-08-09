@@ -266,16 +266,25 @@ header nav a:hover {
     justify-content: space-between;
 }
 .topics .topic.col2 {
+    max-width: 48%;
+    flex: 1 1 48%;
+}
+.topics .topic.col3 {
+    max-width: 31%;
+    flex: 1 1 31%;
+}
+.topics .topic {
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 50px;
     border-bottom: 1px dashed black;
-    max-width: 48%;
-    flex: 1 1 48%;
 }
+
 .topic h2 {
     margin-top: 12px;
 }
+
+
 .btn {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -353,4 +362,16 @@ header nav a:hover {
 }
 .contacts li a:hover {
     color: cyan;
+}
+
+.topics .topic.col3 h2 {
+    line-height: 24px;
+    color:lightblue;
+}
+.topics .topic.col3 p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.topics .topic.col3 img {
+    max-width: 100%;
 }
